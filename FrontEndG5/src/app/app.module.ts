@@ -1,3 +1,5 @@
+import { DobavljacDialogComponent } from './components/dialogs/dobavljac-dialog/dobavljac-dialog.component';
+import { ArtiklDialogComponent } from './components/dialogs/artikl-dialog/artikl-dialog.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatButtonModule} from '@angular/material/button';
@@ -9,6 +11,11 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import  {MatTableModule} from '@angular/material/table';
 import {HttpClientModule} from '@angular/common/http'
 import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatDialogModule} from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule} from '@angular/material/input'
+import {FormsModule} from '@angular/forms'
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -32,7 +39,9 @@ import { HomeComponent } from './components/core/home/home.component';
     ArtiklComponent,
     DobavljacComponent,
     PorudzbinaComponent,
-    StavkaPorudzbineComponent
+    StavkaPorudzbineComponent,
+    ArtiklDialogComponent,
+    DobavljacDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +55,12 @@ import { HomeComponent } from './components/core/home/home.component';
     BrowserAnimationsModule,
     MatTableModule,
     HttpClientModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSnackBarModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
