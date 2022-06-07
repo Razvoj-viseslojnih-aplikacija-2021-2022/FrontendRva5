@@ -14,8 +14,13 @@ import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatDialogModule} from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule} from '@angular/material/input'
-import {FormsModule} from '@angular/forms'
+import { MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -28,6 +33,8 @@ import { DobavljacComponent } from './components/model/dobavljac/dobavljac.compo
 import { PorudzbinaComponent } from './components/model/porudzbina/porudzbina.component';
 import { StavkaPorudzbineComponent } from './components/model/stavka-porudzbine/stavka-porudzbine.component';
 import { HomeComponent } from './components/core/home/home.component';
+import { PorudzbinaDialogComponent } from './components/dialogs/porudzbina-dialog/porudzbina-dialog.component';
+import { StavkaPorudzbineDialogComponent } from './components/dialogs/stavka-porudzbine-dialog/stavka-porudzbine-dialog.component';
 
 
 @NgModule({
@@ -41,7 +48,9 @@ import { HomeComponent } from './components/core/home/home.component';
     PorudzbinaComponent,
     StavkaPorudzbineComponent,
     ArtiklDialogComponent,
-    DobavljacDialogComponent
+    DobavljacDialogComponent,
+    PorudzbinaDialogComponent,
+    StavkaPorudzbineDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +69,12 @@ import { HomeComponent } from './components/core/home/home.component';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatOptionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
