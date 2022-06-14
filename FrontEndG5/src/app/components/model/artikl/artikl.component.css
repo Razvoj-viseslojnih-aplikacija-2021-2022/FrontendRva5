@@ -40,3 +40,8 @@
   .title-center {
     margin: 0 auto;
   }
+
+  .search-field{
+    left: 910px;
+    width: 220px;
+  }
